@@ -298,9 +298,9 @@ html {
 	position: relative;
 	display: block;
 	cursor: pointer;
-	user-select: none;
+	user-select: none; 
 }
-.filter-form-checkbox-icon_irish-oak::before {
+.filter-form-choice-color-item label::before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -310,115 +310,42 @@ html {
 	height: 60px;
 	line-height: 60px;
 	background: url("../img/choice-color.png") no-repeat; 
-	background-position: 0px 0px;
 }
-.filter-form-checkbox-icon_mountain-pine::after,
-.filter-form-checkbox-icon_golden-oak::after,
-.filter-form-checkbox-icon_light-oak::after,
-.filter-form-checkbox-icon_nut::after,
-.filter-form-checkbox-icon_walnut::after, 
-.filter-form-checkbox-icon_irish-oak::after,
-.filter-form-checkbox-icon_oregon::after {
-	content: "";
-	display: none;
-	position: absolute;
-	left: 0px;
-	top: 0;
-	width: 60px;
-	height: 60px;
-	font-size: 0;
-	line-height: 60px;
-	border: 0;
-	background-image: url(../img/checkmark-outline.svg);
-	-webkit-background-size: 40px 40px;
-	background-size: 40px 40px;
-	background-repeat: no-repeat;
-	background-position: 13px 8px;
-	cursor: pointer;
-}
-.filter-form-checkbox-icon_mountain-pine::before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 0px;
-	top: 0;
-	width: 60px;
-	height: 60px;
-	line-height: 60px;
-	background: url("../img/choice-color.png") no-repeat; 
-	background-position: -69px 0px;
-}
-.filter-form-checkbox-icon_oregon::before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 0px;
-	top: 0;
-	width: 60px;
-	height: 60px;
-	line-height: 60px;
-	background: url("../img/choice-color.png") no-repeat; 
-	background-position: -137px 0px;
-}
-.filter-form-checkbox-icon_light-oak::before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 0px;
-	top: 0;
-	width: 60px;
-	height: 60px;
-	line-height: 60px;
-	background: url("../img/choice-color.png") no-repeat; 
-	background-position: -206px 0px;
-}
-.filter-input-checkbox:checked + .filter-form-checkbox-icon_light-oak::after {
-    display: block;
-}
-.filter-form-checkbox-icon_nut::before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 0px;
-	top: 0;
-	width: 60px;
-	height: 60px;
-	line-height: 60px;
-	background: url("../img/choice-color.png") no-repeat; 
-	background-position: -275px 0px;
-}
-.filter-form-checkbox-icon_golden-oak::before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 0px;
-	top: 0;
-	width: 60px;
-	height: 60px;
-	line-height: 60px;
-	background: url("../img/choice-color.png") no-repeat; 
-	background-position: -344px 0px;
-}
-.filter-form-checkbox-icon_walnut::before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 0px;
-	top: 0;
-	width: 60px;
-	height: 60px;
-	line-height: 60px;
-	background: url("../img/choice-color.png") no-repeat; 
+label[for="filter-irish-oak"]::before {	
 	background-position: -413px 0px;
 }
-.filter-input-checkbox:checked + .filter-form-checkbox-icon_walnut::after,
-.filter-input-checkbox:checked + .filter-form-checkbox-icon_mountain-pine::after,
-.filter-input-checkbox:checked + .filter-form-checkbox-icon_golden-oak::after,
-.filter-input-checkbox:checked + .filter-form-checkbox-icon_light-oak::after,
-.filter-input-checkbox:checked + .filter-form-checkbox-icon_oregon::after,
-.filter-input-checkbox:checked + .filter-form-checkbox-icon_nut::after,
-.filter-input-checkbox:checked + .filter-form-checkbox-icon_irish-oak::after {
-    display: block;
+label[for="filter-mountain-pine"]::before {
+	background-position: -69px 0px;
+}
+label[for="filter-oregon"]::before {
+	background-position: -137px 0px;
+}
+label[for="filter-light-oak"]::before {
+	background-position: -206px 0px;
+}
+label[for="filter-nut"]::before {
+	background-position: -275px 0px;
+}
+label[for="filter-golden-oak"]::before {
+	background-position: -344px 0px;
+}
+label[for="filter-walnut"]::before {
+	background-position: -413px 0px;
+}
+.filter-input-checkbox:checked + label::after {
+	content: "";
+	position: absolute;
+	left: 22px;
+	top: 7px;
+	width: 19px;
+	height: 33px;
+	line-height: 60px;
+	border-top: 2px solid transparent;
+	border-left: 2px solid transparent;
+	border-right: 5px solid #ffffff;
+	border-bottom: 5px solid #ffffff;
+	transform: rotate(45deg);
+	z-index: 10;
 }
 .main__choice-color-wrap span {
 	font-size: 14px;
